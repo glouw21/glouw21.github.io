@@ -1,0 +1,4 @@
+baseURL = 'https://hoeven.tech/'
+locale = 'de'
+title = 'hoeven.tech'
+theme = 'PaperMod'
