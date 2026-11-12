@@ -1,4 +1,44 @@
 baseURL = 'https://hoeven.tech/'
 locale = 'de'
+defaultContentLanguage = 'de'
 title = 'hoeven.tech'
-theme = 'PaperMod'
+theme = 'introduction'
+
+[params]
+  description = 'Persönliche Website von hoeven.tech'
+  themeStyle = 'auto'          # light | dark | auto
+  showMenu = true
+  showRSSButton = false
+  fadeIn = true
+  dateFormat = '2. January 2006'
+  # email = ''                 # Wird öffentlich im Kontaktbereich angezeigt
+
+  [params.home]
+    introHeight = 'fullheight'
+    showLatest = true
+    showAllPosts = false
+    allPostsArchiveFormat = true
+    localTime = true
+    timeZone = 'Europe/Berlin'
+    timeFormat = 'de-DE'
+
+  [params.share]
+    twitter = false
+    facebook = false
+    pinterest = false
+
+  [[params.social]]
+    url = 'https://github.com/glouw21'
+    icon = 'github'
+    icon_pack = 'fab'
+
+[taxonomies]
+  tag = 'tags'
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  style = 'solarized-dark'
+
+[markup.goldmark.renderer]
+  unsafe = true                # Vom Theme benötigt (HTML-Icons im Footer)
